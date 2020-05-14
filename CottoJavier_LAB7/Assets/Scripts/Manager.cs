@@ -48,7 +48,7 @@ public class Manager : MonoBehaviour
     
     }
 
-    public void MenuInicio() {
+    /*public void MenuInicio() {
 
         SceneManager.LoadScene("MainMenu");
 
@@ -57,7 +57,7 @@ public class Manager : MonoBehaviour
     public void IniciarJuego() {
 
         SceneManager.LoadScene("SampleScene");
-    }
+    }*/
 
     public void RestartScene() 
     {

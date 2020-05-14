@@ -8,19 +8,13 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    Rigidbody rb;
-
-    public float score = 0;
-    public Text scoreText;
+    //Rigidbody rb;
 
     private NavMeshAgent agent;
-
     void Start()
     {
 
-        rb = GetComponent<Rigidbody>();
-
-        scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Text>();
+        //rb = GetComponent<Rigidbody>();
 
         agent = GetComponent<NavMeshAgent>();
 
@@ -34,6 +28,7 @@ public class PlayerController : MonoBehaviour
             Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             RaycastHit hitInfo;
+
 
             if (Physics.Raycast(myRay, out hitInfo))
             {
